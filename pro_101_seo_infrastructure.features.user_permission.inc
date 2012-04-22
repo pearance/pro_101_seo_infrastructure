@@ -13,31 +13,49 @@ function pro_101_seo_infrastructure_user_default_permissions() {
   // Exported permission: administer pathauto
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'pathauto',
   );
 
   // Exported permission: administer redirects
   $permissions['administer redirects'] = array(
     'name' => 'administer redirects',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'redirect',
   );
 
   // Exported permission: administer url aliases
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: create url aliases
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: notify of path changes
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'pathauto',
   );
 
   return $permissions;
