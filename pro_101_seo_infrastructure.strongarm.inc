@@ -179,7 +179,7 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_punctuation_hyphen';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['pathauto_punctuation_hyphen'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -319,7 +319,7 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_taxonomy_term_pattern';
-  $strongarm->value = '[term:vocabulary]/[term:name]';
+  $strongarm->value = '';
   $export['pathauto_taxonomy_term_pattern'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -355,7 +355,9 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
+    'answers' => TRUE,
     'node' => TRUE,
+    'taxonomy' => TRUE,
     'user' => TRUE,
   );
   $export['path_alias_whitelist'] = $strongarm;
