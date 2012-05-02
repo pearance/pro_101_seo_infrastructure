@@ -4,4 +4,4 @@
  * Code for the Pro 101 SEO Infrastructure feature.
  */
 
-include_once('pro_101_seo_infrastructure.features.inc');
+include_once 'pro_101_seo_infrastructure.features.inc';
