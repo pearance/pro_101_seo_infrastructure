@@ -333,7 +333,7 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_user_pattern';
-  $strongarm->value = 'users/[user:name]';
+  $strongarm->value = 'users/[user:field_first_name]-[user:field_last_name]';
   $export['pathauto_user_pattern'] = $strongarm;
 
   $strongarm = new stdClass;
