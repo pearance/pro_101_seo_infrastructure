@@ -97,7 +97,6 @@ features[variable][] = xmlsitemap_lastmod_format
 features[variable][] = xmlsitemap_minimum_lifetime
 features[variable][] = xmlsitemap_path
 features[variable][] = xmlsitemap_prefetch_aliases
-features[variable][] = xmlsitemap_settings__active_tab
 features[variable][] = xmlsitemap_settings_menu_link_main-menu
 features[variable][] = xmlsitemap_settings_menu_link_menu-auxiliary
 features[variable][] = xmlsitemap_settings_menu_link_user-menu
