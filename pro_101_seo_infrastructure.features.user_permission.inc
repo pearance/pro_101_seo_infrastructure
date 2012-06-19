@@ -38,6 +38,15 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'module' => 'path',
   );
 
+  // Exported permission: administer xmlsitemap.
+  $permissions['administer xmlsitemap'] = array(
+    'name' => 'administer xmlsitemap',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'xmlsitemap',
+  );
+
   // Exported permission: create url aliases.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
