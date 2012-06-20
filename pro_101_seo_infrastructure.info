@@ -9,7 +9,6 @@ dependencies[] = features
 dependencies[] = globalredirect
 dependencies[] = path
 dependencies[] = pathauto
-dependencies[] = rdf
 dependencies[] = redirect
 dependencies[] = strongarm
 dependencies[] = subpathauto
