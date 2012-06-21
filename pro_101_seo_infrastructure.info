@@ -21,7 +21,6 @@ features[user_permission][] = create url aliases
 features[user_permission][] = notify of path changes
 features[variable][] = clean_url
 features[variable][] = globalredirect_settings
-features[variable][] = path_alias_whitelist
 features[variable][] = pathauto_blog_pattern
 features[variable][] = pathauto_case
 features[variable][] = pathauto_forum_pattern
