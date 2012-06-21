@@ -27,6 +27,7 @@ features[variable][] = pathauto_forum_pattern
 features[variable][] = pathauto_ignore_words
 features[variable][] = pathauto_max_component_length
 features[variable][] = pathauto_max_length
+features[variable][] = pathauto_node_pattern
 features[variable][] = pathauto_punctuation_back_slash
 features[variable][] = pathauto_punctuation_colon
 features[variable][] = pathauto_punctuation_equal
