@@ -28,6 +28,15 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'module' => 'wordstream',
   );
 
+  // Exported permission: administer meta tags.
+  $permissions['administer meta tags'] = array(
+    'name' => 'administer meta tags',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'metatag',
+  );
+
   // Exported permission: administer pathauto.
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
@@ -64,6 +73,15 @@ function pro_101_seo_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: edit meta tags.
+  $permissions['edit meta tags'] = array(
+    'name' => 'edit meta tags',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'metatag',
   );
 
   // Exported permission: kwresearch admin page keywords.
