@@ -58,5 +58,14 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'module' => 'pathauto',
   );
 
+  // Exported permission: perform content analysis.
+  $permissions['perform content analysis'] = array(
+    'name' => 'perform content analysis',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'contentanalysis',
+  );
+
   return $permissions;
 }

@@ -20,6 +20,48 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_analyzerchecklist';
+  $strongarm->value = 1;
+  $export['contentanalysis_analyzerchecklist'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_default_analyzers';
+  $strongarm->value = 'alchemy';
+  $export['contentanalysis_default_analyzers'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_node_edit_form_collapsed';
+  $strongarm->value = 1;
+  $export['contentanalysis_node_edit_form_collapsed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_node_parse_nodetitle_prepend';
+  $strongarm->value = 1;
+  $export['contentanalysis_node_parse_nodetitle_prepend'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_node_parse_nodetitle_tags';
+  $strongarm->value = '<h1 class="title" id="page-title">[node:title]</h1>';
+  $export['contentanalysis_node_parse_nodetitle_tags'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_node_report_display';
+  $strongarm->value = 'both';
+  $export['contentanalysis_node_report_display'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'globalredirect_settings';
   $strongarm->value = array(
     'menu_check' => 1,
