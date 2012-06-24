@@ -13,6 +13,31 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'alchemy_contentanalysis_defaulttypes';
+  $strongarm->value = array(
+    'concepts' => 'concepts',
+    'entities' => 'entities',
+    'keywords' => 'keywords',
+  );
+  $export['alchemy_contentanalysis_defaulttypes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'alchemy_contentanalysis_defaultusecache';
+  $strongarm->value = 0;
+  $export['alchemy_contentanalysis_defaultusecache'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'alchemy_usecurl';
+  $strongarm->value = 0;
+  $export['alchemy_usecurl'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'clean_url';
   $strongarm->value = TRUE;
   $export['clean_url'] = $strongarm;
@@ -27,8 +52,108 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_analyzer_settings';
+  $strongarm->value = array(
+    'seo' => array(
+      'seo_meta_title_length' => array(
+        0 => '6',
+        1 => '12',
+      ),
+      'seo_meta_title_length_warning' => array(
+        0 => '4',
+        1 => '15',
+      ),
+      'seo_meta_title_length_chars' => array(
+        0 => '50',
+        1 => '75',
+      ),
+      'seo_meta_title_length_chars_warning' => array(
+        0 => '30',
+        1 => '100',
+      ),
+      'seo_body_length' => array(
+        0 => '200',
+        1 => '800',
+      ),
+      'seo_body_length_warning' => array(
+        0 => '100',
+        1 => '1200',
+      ),
+      'seo_meta_description_dont_inherit_status' => 1,
+      'seo_meta_description_length_chars' => array(
+        0 => '60',
+        1 => '160',
+      ),
+      'seo_meta_description_length_chars_warning' => array(
+        0 => '0',
+        1 => '1000',
+      ),
+      'seo_meta_keywords_dont_inherit_status' => 1,
+      'seo_meta_keywords_length' => array(
+        0 => '5',
+        1 => '50',
+      ),
+      'seo_meta_keywords_length_warning' => array(
+        0 => '0',
+        1 => '100',
+      ),
+      'seo_meta_keywords_length_phrases' => array(
+        0 => '1',
+        1 => '15',
+      ),
+      'seo_meta_keywords_length_phrases_warning' => array(
+        0 => '0',
+        1 => '40',
+      ),
+      'seo_keyword_not_set' => '1',
+      'seo_keyword_meta_title_freq' => array(
+        0 => '1',
+        1 => '1',
+      ),
+      'seo_keyword_meta_title_freq_warning' => array(
+        0 => '1',
+        1 => '2',
+      ),
+      'seo_keyword_meta_title_prominence' => '50',
+      'seo_keyword_meta_title_prominence_warning' => '25',
+      'seo_keyword_body_freq' => array(
+        0 => '2',
+        1 => '4',
+      ),
+      'seo_keyword_body_freq_warning' => array(
+        0 => '1',
+        1 => '8',
+      ),
+      'seo_keyword_body_prominence' => '50',
+      'seo_keyword_body_prominence_warning' => '25',
+      'seo_keyword_meta_description_freq' => array(
+        0 => '0',
+        1 => '10',
+      ),
+      'seo_keyword_meta_description_freq_warning' => array(
+        0 => '0',
+        1 => '10',
+      ),
+      'seo_keyword_meta_keywords_freq' => array(
+        0 => '0',
+        1 => '8',
+      ),
+      'seo_keyword_meta_keywords_freq_warning' => array(
+        0 => '0',
+        1 => '8',
+      ),
+    ),
+  );
+  $export['contentanalysis_analyzer_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'contentanalysis_default_analyzers';
-  $strongarm->value = 'alchemy';
+  $strongarm->value = array(
+    'alchemy' => 'alchemy',
+    'seo' => 'seo',
+  );
   $export['contentanalysis_default_analyzers'] = $strongarm;
 
   $strongarm = new stdClass();
