@@ -89,3 +89,5 @@ features[variable][] = redirect_purge_inactive
 features[variable][] = redirect_warning
 features[variable][] = subpathauto_depth
 features[variable][] = subpathauto_ignore_admin
+features[variable][] = wordstream_adult_filter
+features[variable][] = wordstream_cache_time

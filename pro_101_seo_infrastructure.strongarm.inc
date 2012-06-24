@@ -541,5 +541,19 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm->value = 1;
   $export['subpathauto_ignore_admin'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wordstream_adult_filter';
+  $strongarm->value = 'on';
+  $export['wordstream_adult_filter'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wordstream_cache_time';
+  $strongarm->value = '604800';
+  $export['wordstream_cache_time'] = $strongarm;
+
   return $export;
 }
