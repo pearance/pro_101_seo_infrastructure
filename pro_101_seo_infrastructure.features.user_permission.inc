@@ -10,6 +10,17 @@
 function pro_101_seo_infrastructure_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access google analytics reports.
+  $permissions['access google analytics reports'] = array(
+    'name' => 'access google analytics reports',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'professional',
+      2 => 'support',
+    ),
+    'module' => 'google_analytics_reports',
+  );
+
   // Exported permission: access wordstream reports.
   $permissions['access wordstream reports'] = array(
     'name' => 'access wordstream reports',
@@ -28,6 +39,24 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'module' => 'wordstream',
   );
 
+  // Exported permission: administer chart.
+  $permissions['administer chart'] = array(
+    'name' => 'administer chart',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'chart',
+  );
+
+  // Exported permission: administer consumers.
+  $permissions['administer consumers'] = array(
+    'name' => 'administer consumers',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'oauth_common',
+  );
+
   // Exported permission: administer google analytics.
   $permissions['administer google analytics'] = array(
     'name' => 'administer google analytics',
@@ -37,6 +66,15 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'module' => 'googleanalytics',
   );
 
+  // Exported permission: administer google analytics reports.
+  $permissions['administer google analytics reports'] = array(
+    'name' => 'administer google analytics reports',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'google_analytics_api',
+  );
+
   // Exported permission: administer meta tags.
   $permissions['administer meta tags'] = array(
     'name' => 'administer meta tags',
@@ -44,6 +82,15 @@ function pro_101_seo_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'metatag',
+  );
+
+  // Exported permission: administer oauth.
+  $permissions['administer oauth'] = array(
+    'name' => 'administer oauth',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'oauth_common',
   );
 
   // Exported permission: administer pathauto.
@@ -119,6 +166,24 @@ function pro_101_seo_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'pathauto',
+  );
+
+  // Exported permission: oauth authorize any consumers.
+  $permissions['oauth authorize any consumers'] = array(
+    'name' => 'oauth authorize any consumers',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'oauth_common',
+  );
+
+  // Exported permission: oauth register any consumers.
+  $permissions['oauth register any consumers'] = array(
+    'name' => 'oauth register any consumers',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'oauth_common',
   );
 
   // Exported permission: opt-in or out of tracking.
