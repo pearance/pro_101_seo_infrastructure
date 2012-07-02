@@ -21,6 +21,7 @@ dependencies[] = oauth_common
 dependencies[] = path
 dependencies[] = pathauto
 dependencies[] = redirect
+dependencies[] = site_verify
 dependencies[] = strongarm
 dependencies[] = subpathauto
 dependencies[] = wordstream

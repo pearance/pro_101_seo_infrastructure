@@ -301,12 +301,12 @@ user/*/*';
   $strongarm->api_version = 1;
   $strongarm->name = 'googleanalytics_roles';
   $strongarm->value = array(
-    2 => '2',
-    8998634 => '8998634',
-    96220023 => '96220023',
-    160159362 => '160159362',
-    121011395 => '121011395',
-    1 => 0,
+    1 => '1',
+    2 => 0,
+    8998634 => 0,
+    96220023 => 0,
+    160159362 => 0,
+    121011395 => 0,
   );
   $export['googleanalytics_roles'] = $strongarm;
 
@@ -377,7 +377,7 @@ user/*/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'googleanalytics_visibility_roles';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['googleanalytics_visibility_roles'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -448,11 +448,11 @@ user/*/*';
   $strongarm->name = 'kwresearch_site_report_data_options';
   $strongarm->value = array(
     'daily_volume' => 'daily_volume',
+    'google_dailyest' => 'google_dailyest',
+    'yahoo_dailyest' => 'yahoo_dailyest',
+    'bing_dailyest' => 'bing_dailyest',
     'competition' => 0,
     'bid' => 0,
-    'google_dailyest' => 0,
-    'yahoo_dailyest' => 0,
-    'bing_dailyest' => 0,
   );
   $export['kwresearch_site_report_data_options'] = $strongarm;
 
