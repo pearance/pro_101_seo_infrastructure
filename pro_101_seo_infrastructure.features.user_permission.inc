@@ -10,6 +10,24 @@
 function pro_101_seo_infrastructure_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access wordstream reports.
+  $permissions['access wordstream reports'] = array(
+    'name' => 'access wordstream reports',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'wordstream',
+  );
+
+  // Exported permission: admin wordstream.
+  $permissions['admin wordstream'] = array(
+    'name' => 'admin wordstream',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'wordstream',
+  );
+
   // Exported permission: administer pathauto.
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
@@ -46,6 +64,24 @@ function pro_101_seo_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: kwresearch admin page keywords.
+  $permissions['kwresearch admin page keywords'] = array(
+    'name' => 'kwresearch admin page keywords',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'kwresearch',
+  );
+
+  // Exported permission: kwresearch admin site keywords.
+  $permissions['kwresearch admin site keywords'] = array(
+    'name' => 'kwresearch admin site keywords',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'kwresearch',
   );
 
   // Exported permission: notify of path changes.
