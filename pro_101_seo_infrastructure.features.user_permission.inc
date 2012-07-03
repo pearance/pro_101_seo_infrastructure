@@ -10,22 +10,13 @@
 function pro_101_seo_infrastructure_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access wordstream reports.
-  $permissions['access wordstream reports'] = array(
-    'name' => 'access wordstream reports',
+  // Exported permission: administer meta tags.
+  $permissions['administer meta tags'] = array(
+    'name' => 'administer meta tags',
     'roles' => array(
       0 => 'developer',
     ),
-    'module' => 'wordstream',
-  );
-
-  // Exported permission: admin wordstream.
-  $permissions['admin wordstream'] = array(
-    'name' => 'admin wordstream',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'wordstream',
+    'module' => 'metatag',
   );
 
   // Exported permission: administer pathauto.
@@ -66,22 +57,13 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: kwresearch admin page keywords.
-  $permissions['kwresearch admin page keywords'] = array(
-    'name' => 'kwresearch admin page keywords',
+  // Exported permission: edit meta tags.
+  $permissions['edit meta tags'] = array(
+    'name' => 'edit meta tags',
     'roles' => array(
       0 => 'developer',
     ),
-    'module' => 'kwresearch',
-  );
-
-  // Exported permission: kwresearch admin site keywords.
-  $permissions['kwresearch admin site keywords'] = array(
-    'name' => 'kwresearch admin site keywords',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'kwresearch',
+    'module' => 'metatag',
   );
 
   // Exported permission: notify of path changes.
