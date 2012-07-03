@@ -140,6 +140,24 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'module' => 'metatag',
   );
 
+  // Exported permission: kwresearch admin page keywords.
+  $permissions['kwresearch admin page keywords'] = array(
+    'name' => 'kwresearch admin page keywords',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'kwresearch',
+  );
+
+  // Exported permission: kwresearch admin site keywords.
+  $permissions['kwresearch admin site keywords'] = array(
+    'name' => 'kwresearch admin site keywords',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'kwresearch',
+  );
+
   // Exported permission: notify of path changes.
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
