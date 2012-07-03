@@ -10,6 +10,15 @@
 function pro_101_seo_infrastructure_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: administer google analytics.
+  $permissions['administer google analytics'] = array(
+    'name' => 'administer google analytics',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'googleanalytics',
+  );
+
   // Exported permission: administer meta tags.
   $permissions['administer meta tags'] = array(
     'name' => 'administer meta tags',
@@ -76,6 +85,15 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'module' => 'pathauto',
   );
 
+  // Exported permission: opt-in or out of tracking.
+  $permissions['opt-in or out of tracking'] = array(
+    'name' => 'opt-in or out of tracking',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'googleanalytics',
+  );
+
   // Exported permission: perform content analysis.
   $permissions['perform content analysis'] = array(
     'name' => 'perform content analysis',
@@ -83,6 +101,15 @@ function pro_101_seo_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'contentanalysis',
+  );
+
+  // Exported permission: use PHP for tracking visibility.
+  $permissions['use PHP for tracking visibility'] = array(
+    'name' => 'use PHP for tracking visibility',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'googleanalytics',
   );
 
   return $permissions;
