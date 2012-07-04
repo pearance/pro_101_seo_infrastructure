@@ -20,6 +20,7 @@ dependencies[] = oauth_common
 dependencies[] = path
 dependencies[] = pathauto
 dependencies[] = redirect
+dependencies[] = site_verify
 dependencies[] = strongarm
 dependencies[] = subpathauto
 features[ctools][] = strongarm:strongarm:1
