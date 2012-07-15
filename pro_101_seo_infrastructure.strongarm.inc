@@ -537,13 +537,6 @@ user/*/*';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_user_pattern';
-  $strongarm->value = 'user/[user:field_first_name]-[user:field_last_name]';
-  $export['pathauto_user_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_verbose';
   $strongarm->value = 1;
   $export['pathauto_verbose'] = $strongarm;

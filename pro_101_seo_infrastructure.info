@@ -97,7 +97,6 @@ features[variable][] = pathauto_separator
 features[variable][] = pathauto_taxonomy_term_pattern
 features[variable][] = pathauto_transliterate
 features[variable][] = pathauto_update_action
-features[variable][] = pathauto_user_pattern
 features[variable][] = pathauto_verbose
 features[variable][] = redirect_auto_redirect
 features[variable][] = redirect_default_status_code
