@@ -87,7 +87,6 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'name' => 'administer redirects',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'redirect',
   );
