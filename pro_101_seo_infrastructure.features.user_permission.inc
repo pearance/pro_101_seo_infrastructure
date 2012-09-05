@@ -15,6 +15,7 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'name' => 'access google analytics reports',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'google_analytics_reports',
   );
@@ -42,6 +43,7 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'name' => 'administer google analytics',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'googleanalytics',
   );
@@ -51,6 +53,7 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'name' => 'administer google analytics reports',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'google_analytics_api',
   );
@@ -115,6 +118,7 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'metatag',
   );

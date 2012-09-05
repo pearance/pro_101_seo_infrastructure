@@ -153,6 +153,7 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm->value = array(
     'alchemy' => 'alchemy',
     'seo' => 'seo',
+    'kwresearch' => 'kwresearch',
   );
   $export['contentanalysis_default_analyzers'] = $strongarm;
 
