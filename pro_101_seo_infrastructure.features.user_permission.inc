@@ -15,7 +15,8 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'name' => 'access google analytics reports',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
+      1 => 'professional',
+      2 => 'support',
     ),
     'module' => 'google_analytics_reports',
   );
