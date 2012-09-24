@@ -188,6 +188,22 @@ function pro_101_seo_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'default_metatag_config';
+  $strongarm->value = array(
+    'taxonomy_term' => TRUE,
+    'node' => TRUE,
+    'global:frontpage' => FALSE,
+    'global' => FALSE,
+    'node:blog' => FALSE,
+    'node:page' => FALSE,
+    'node:specialty' => FALSE,
+    'user' => FALSE,
+  );
+  $export['default_metatag_config'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'globalredirect_settings';
   $strongarm->value = array(
     'menu_check' => 1,

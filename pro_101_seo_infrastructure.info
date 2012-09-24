@@ -58,6 +58,7 @@ features[variable][] = contentanalysis_node_edit_form_collapsed
 features[variable][] = contentanalysis_node_parse_nodetitle_prepend
 features[variable][] = contentanalysis_node_parse_nodetitle_tags
 features[variable][] = contentanalysis_node_report_display
+features[variable][] = default_metatag_config
 features[variable][] = globalredirect_settings
 features[variable][] = google_analytics_reports_hd
 features[variable][] = googleanalytics_cache
