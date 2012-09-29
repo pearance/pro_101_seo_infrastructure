@@ -197,7 +197,7 @@ function pro_101_seo_infrastructure_strongarm() {
     'node:blog' => FALSE,
     'node:page' => FALSE,
     'node:specialty' => FALSE,
-    'user' => FALSE,
+    'user' => TRUE,
   );
   $export['default_metatag_config'] = $strongarm;
 
