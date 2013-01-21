@@ -100,6 +100,7 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'name' => 'administer url aliases',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'path',
   );
@@ -109,6 +110,7 @@ function pro_101_seo_infrastructure_user_default_permissions() {
     'name' => 'create url aliases',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'path',
   );
